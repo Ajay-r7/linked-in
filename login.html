@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+
+    <!-- favicon -->
+  <link rel="icon" type="img/png" href="https://cdn-icons-png.flaticon.com/128/3536/3536505.png">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./login.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- box icon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body style="background-color: rgba(247, 239, 228, 0.44);">
+
+<!----------------- nav bar -------------------->
+
+<nav class="navbar sticky-top">
+
+  <div class="navbar-left d-flex">
+    <a href="login.html" class="logo"><img src="./image/logo.png" style="margin-top: -15px;" alt=""></a>
+    <form class="d-flex ms-4 " role="search" style="margin-top: -18px;">
+      <input  class="searchbar form-control w-100 rounded-pill me-2" style="width: 300px;" type="search" placeholder="Search"  aria-label="Search" >
+      
+              <i class="magni fa-solid fa-magnifying-glass mt-2"></i>
+    </form>
+  </div>
+  <div class="navbar-center">
+    <ul>
+      <li><a href="#"><img src="./image/home.png" alt=""><span>Home</span></a></li>
+      <li><a href="#"><img src="./image/network.png" alt=""><span>My Network</span></a></li>
+      <li><a href="#"><img src="./image/jobs.png" alt=""><span>Jobs</span></a></li>
+      <li><a href="#"><img src="./image/message.png" alt=""><span>Messaging</span></a></li>
+      <li><a href="#"><img src="./image/notification.png" alt=""><span style="position: relative;">Notifications
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span></span></a></li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <div class="online position-relative">
+      <img src="image/Ajay.jpg" class="nav-profile-img">
+      <span class="position-absolute top-0 start-50 translate-middle p-1 bg-success border border-light rounded-circle" style="margin-top: 3px; margin-left: -3px;">
+        <span class="visually-hidden">New alerts</span>
+      </span>
+    </div>
+  </div>
+<!-- -------------------profile dropdown----------------------- -->
+
+
+</nav>
+<!----------------- end nav bar -------------------->
+
+<!-----------------  homepage  -------------------->
+<div class="container-fluid">
+  <div class="left-sidebar">
+    <div class="sidebar-profile-box  ">
+      <img
+        src="https://media.licdn.com/dms/image/D5616AQHfHPN_cT8GFw/profile-displaybackgroundimage-shrink_350_1400/0/1705587516810?e=1711584000&v=beta&t=0f_xQziOgMllwPtTd0PRCxzwGBfSgwM9PpIc9SLM6Yw"
+        style="border-radius: 10px 10px 0 0;" width="100%" alt="">
+      <div class="sidebar-profile-info">
+        <img src="./image/Ajay.jpg" width="100%" alt="">
+        <h1 style="font-size: larger;">Ajay R</h1>
+        <h4 style="font-size:small;color: rgb(99, 99, 99);">MEARN Stack | Web developer</h4>
+        <hr>
+        <ul>
+          <li>Connections <span>38</span></li>
+          <li>Your profile views <span>275</span></li>
+          <li>Your post views <span>347</span></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="sidebar-profile-link">
+        <a href="#"><img src="./image/items.png" alt="">My items</a>
+        <a href="#"><img src="./image/premium.png" alt="">Try premium</a>
+
+      </div>
+    </div>
+    <div class="sidebar-groups">
+      <ul>
+        <li>Groups</li>
+        <li>Events </li>
+        <li>Followed Hashtags</li>
+      </ul>
+      <p>Discover more</p>
+    </div>
+  </div>
+
+  <!-- ------------------------------center content------------------------------- -->
+
+  <div class="main-content">
+
+    <div class="create-post">
+      <div class="create-post-input">
+        <img src="./image/Ajay.jpg" alt="">
+        <input  class="searchbar1 border border-dark w-75 rounded-pill p-3 mt-1"  type="disable" placeholder="Start a post"  aria-label="Search" > 
+      </div>
+      <div class="create-post-media">
+        <li><img src="https://icon-library.com/images/gallery-icon-png/gallery-icon-png-5.jpg" width="30px" alt="">Media</li>
+        <li><img src="https://th.bing.com/th/id/R.03c77e11e4a54a89d85d38c55ed28b1c?rik=08m1biBxc1zGDQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpaomedia%2fsmall-n-flat%2f1024%2fcalendar-icon.png&ehk=psUPT1KNt%2fis72UgirsFnoXwWLiTe8hiR%2fxgwOk8ySs%3d&risl=&pid=ImgRaw&r=0" width="30px" alt="">Event</li>
+        <li><img src="https://cdn1.iconfinder.com/data/icons/feedback-review/64/x-05-256.png" width="27px" alt="">Write article</li>
+      </div>
+    </div>
+    <hr>
+    
+    <div class="post">
+      <div class="author">
+        <img src="https://media.licdn.com/dms/image/C560BAQFtpWsWBSMQOA/company-logo_100_100/0/1680082292420/luminartechnolab_logo?e=1714003200&v=beta&t=HV3-1mMZB3MiSJhl4ULan0V8K0gWZ6bBZ26Lr6eP9B8"  alt="">
+        <h1>Luminar Technolab</h1>
+        
+      </div>
+      <small>Full Stack Development
+      </small>
+      <div class="about1">
+        
+        <small>1y ago</small>
+        <p style="margin-top: 20px; font-size: 13px;">Our professional trainers with years of industry experience helps you get trained &placed in emerging technologies like Big Data, Data Science, Machine Learning, Python.</p>
+      </div>
+      <div class="author-post">
+        <img src="https://www.wallpapertip.com/wmimgs/160-1606533_how-to-become-a-full-stack-web-developer.jpg" width="100%" alt="">
+      </div>
+      <div class="post-stat">
+        <div>
+          <img src="./image/thumbsup.png" alt="">
+          <img src="./image/love.png" alt="">
+          <img src="./image/clap.png" alt="">
+          <span class="liked">Lenin and 1084 others</span>
+        </div>
+      </div>
+      <div class="post-acti">
+        <div>
+          <img src="./image/like.png" alt="">
+          <span >Like</span>
+        </div>
+        <div>
+          <img src="./image/comment.png" alt="">
+          <span>Comments</span>
+        </div>
+        <div>
+          <img src="./image/share.png" alt="">
+          <span>Share</span>
+        </div>
+        <div>
+          <img src="./image/send.png" alt="">
+          <span>Send</span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="post">
+      <div class="author">
+        <img src="https://media.licdn.com/dms/image/C560BAQFtpWsWBSMQOA/company-logo_100_100/0/1680082292420/luminartechnolab_logo?e=1714003200&v=beta&t=HV3-1mMZB3MiSJhl4ULan0V8K0gWZ6bBZ26Lr6eP9B8"  alt="">
+        <h1>Luminar Technolab</h1>
+        
+      </div>
+      <small>Founder and CEO Rahul Mohanakumar
+      </small>
+      <div class="about1">
+        
+        <small>1y ago</small>
+        <p style="margin-top: 20px; font-size: 13px;">Our professional trainers with years of industry experience helps you get trained &placed in emerging technologies like Big Data, Data Science, Machine Learning, Python.</p>
+      </div>
+      <div class="author-post">
+        <img src="https://wallpaperaccess.com/full/3239444.jpg" width="100%" alt="">
+      </div>
+      <div class="post-stat">
+        <div>
+          <img src="./image/thumbsup.png" alt="">
+          <img src="./image/love.png" alt="">
+          <img src="./image/clap.png" alt="">
+          <span class="liked">Lenin and 1084 others</span>
+        </div>
+      </div>
+      <div class="post-acti">
+        <div>
+          <img src="./image/like.png" alt="">
+          <span >Like</span>
+        </div>
+        <div>
+          <img src="./image/comment.png" alt="">
+          <span>Comments</span>
+        </div>
+        <div>
+          <img src="./image/share.png" alt="">
+          <span>Share</span>
+        </div>
+        <div>
+          <img src="./image/send.png" alt="">
+          <span>Send</span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="post">
+      <div class="author">
+        <img src="https://media.licdn.com/dms/image/C560BAQFtpWsWBSMQOA/company-logo_100_100/0/1680082292420/luminartechnolab_logo?e=1714003200&v=beta&t=HV3-1mMZB3MiSJhl4ULan0V8K0gWZ6bBZ26Lr6eP9B8"  alt="">
+        <h1>Luminar Technolab</h1>
+        
+      </div>
+      <small>MEARN Developers
+      </small>
+      <div class="about1">
+        
+        <small>1y ago</small>
+        <p style="margin-top: 20px; font-size: 13px;">Our professional trainers with years of industry experience helps you get trained &placed in emerging technologies like Big Data, Data Science, Machine Learning, Python.</p>
+      </div>
+      <div class="author-post">
+        <img src="https://wallpaperaccess.com/full/2525117.jpg" width="100%" alt="">
+      </div>
+      <div class="post-stat">
+        <div>
+          <img src="./image/thumbsup.png" alt="">
+          <img src="./image/love.png" alt="">
+          <img src="./image/clap.png" alt="">
+          <span class="liked">Lenin and 1084 others</span>
+        </div>
+      </div>
+      <div class="post-acti">
+        <div>
+          <img src="./image/like.png" alt="">
+          <span >Like</span>
+        </div>
+        <div>
+          <img src="./image/comment.png" alt="">
+          <span>Comments</span>
+        </div>
+        <div>
+          <img src="./image/share.png" alt="">
+          <span>Share</span>
+        </div>
+        <div>
+          <img src="./image/send.png" alt="">
+          <span>Send</span>
+        </div>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+    <!-- ------------------------------center content------------------------------- -->
+
+  <div class="right-sidebar">
+    <div class="sidebar-news">
+      <h1 style="font-size: larger;">LinkedIn News <span style="margin-left: 90px;"><img src="./image/more.png"
+            width="20px" alt=""></span></h1>
+      <div class="news">
+        <ul style="margin: -10px;">
+          <li>
+            <h3 style="font-size: 12px;font-weight: 500; margin-top: 30px;">The 25 fastest-growing jobs in India</h3>
+            <p style="font-size: 13px; color: rgb(97, 95, 95);">Top news • 18,385 readers</p>
+          </li>
+
+        </ul>
+        <ul style="margin: -10px;">
+          <li>
+            <h3 style="font-size: 12px;font-weight: 500; margin-top: 30px;">Top finance jobs on the rise</h3>
+            <p style="font-size: 13px; color: rgb(97, 95, 95);">1d ago</p>
+          </li>
+
+        </ul>
+        <ul style="margin: -10px;">
+          <li>
+            <h3 style="font-size: 12px;font-weight: 500; margin-top: 30px;">The rise of co-branded credit cards</h3>
+            <p style="font-size: 13px; color: rgb(97, 95, 95);">1d ago • 1,240 readers</p>
+          </li>
+
+        </ul>
+        <ul style="margin: -10px;">
+          <li>
+            <h3 style="font-size: 12px;font-weight: 500; margin-top: 30px;">Spotlight on India at Davos</h3>
+            <p style="font-size: 13px; color: rgb(97, 95, 95);">1d ago • 740 readers</p>
+          </li>
+
+        </ul>
+        <ul style="margin: -10px;">
+          <li>
+            <h3 style="font-size: 12px;font-weight: 500; margin-top: 30px;">More firms seek women CXOs</h3>
+            <p style="font-size: 13px; color: rgb(97, 95, 95);">1d ago • 328 readers</p>
+          </li>
+
+        </ul>
+        <a href="#" style="text-decoration: none;padding:15px;">Show more</a>
+
+      </div>
+    </div>
+    <div class="news-image">
+      <img src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt="">
+    </div>
+    <div class="lastlinks">
+      <a href="#">About</a>
+      <a href="#">Accessiblity</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Advertising</a>
+      <a href="#">Get the app</a>
+      <a href="#">More</a>
+    </div>
+    <div class="copyri" style="margin-left: 30px; margin-top: -10px;">
+      <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Linkedin-Logo.png" width="70px" style="margin-right: 10px;" alt=""><span style="font-size: 13px;">LinkedIn Corporation © 2024</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!----------------- end homepage -------------------->
+
+    
+</body>
+</html>
